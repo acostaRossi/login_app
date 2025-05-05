@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with GET or POST</title>
+    <link rel="stylesheet" href="<%= locals.baseUrl %>style.css">
+</head>
+<body>
+    <h1 class="center">Login with GET or POST</h1>
+    <div class="center">
+        <a href="<%= locals.baseUrl %>protected-area">Protected Area</a>
+    </div>
+    <div class="center mt50 mb50">
+        Form with GET
+        <form action="<%= locals.baseUrl %>do-login" method="GET">
+            <div>
+                <span class="label">Email</span> <input type="text" name="email">
+            </div>
+            <div>
+                <span class="label">Password</span> <input type="password" name="password">
+            </div>
+            <div>
+                <input type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+    <div class="center">
+        Form with POST
+        <form action="/do-login" method="POST">
+            <div>
+                <span class="label">Email</span> <input type="text" name="email">
+            </div>
+            <div>
+                <span class="label">Password</span> <input type="password" name="password">
+            </div>
+            <div>
+                <input type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

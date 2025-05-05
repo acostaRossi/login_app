@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with GET or POST</title>
+    <link rel="stylesheet" href="<%= locals.baseUrl %>style.css">
+</head>
+<body>
+    <h1 class="center">Login with GET or POST</h1>
+    <div class="center">
+        <a href="<%= locals.baseUrl %>">Home Page</a>
+    </div>
+    <div class="center mt50 mb50 fs-40">
+        Hai inserito i valori:
+        </br>
+        Email: <b><%= email %></b>
+        </br>
+        Password: <b><%= password %></b>
+        
+        <% if (locals.success) { %>
+            <p class="green">Login effettuato con successo</p>
+        <% } else { %>
+            <p class="red">Email o Password errati</p>
+        <% } %>
+    </div>
+</body>
+</html>

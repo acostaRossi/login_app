@@ -1,0 +1,29 @@
+.center {
+    text-align: center;
+}
+
+.label {
+    width: 100px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.mb50 {
+    margin-bottom: 50px;
+}
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
